@@ -23,6 +23,18 @@
         vertical-align:middle;
    
        }
+ .post-info{
+    color: white;
+    text-align: right;
+
+ }
+
+ .post-info-clear{
+
+    color: black;
+    text-align: right;
+    font-weight: bold;
+ }
 
 .submit {
  background-color: red;
