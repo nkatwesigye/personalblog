@@ -28,7 +28,7 @@
         border: 1px solid white;
         align-items: center;
         justify-content: center;
-        background-color:black;
+        background-color:cornsilk;
     }
 
     .blog_box2{
@@ -49,8 +49,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('../img/tracks.jpg');
-        color: black;
+        color:black;
         justify-content: center;
+        background-color: cornsilk;
         align-items: left;
         
     }
@@ -59,10 +60,11 @@
         display:flex;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('../img/roast.jpg');
+        background-image: url('../img/homestead.jpg');
         color: black;
         justify-content: right;
         background-color: cornsilk;
+        margin-top: 1%;
         align-items:center;
         font-style: italic;
         font-weight: lighter;

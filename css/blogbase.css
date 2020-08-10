@@ -24,7 +24,11 @@
    
        }
 
-
+.submit {
+ background-color: red;
+ color: orange;
+ text-decoration: navy;
+}
 .maps{
         background-image: url(../img/googlemaps.jpg);
         align-items: center;
@@ -32,3 +36,7 @@
         vertical-align:middle;
    
        }
+
+.color-detail{
+    color: white;
+}
