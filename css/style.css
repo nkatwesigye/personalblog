@@ -24,7 +24,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: orange;
-    position: fixed;
     top: 10%;
     width: 100%;
     direction: rtl;
@@ -49,7 +48,6 @@ li a:hover:not(.active) {
     grid-area: hd;
     background: orange;
     color: black;
-    position: fixed;
     height: 100px;
     top: 0;
     width: 100%;
@@ -70,6 +68,7 @@ li a:hover:not(.active) {
     grid-area: main;
     background-color: cornsilk;
     align-content: space-between;
+    
 }
 
 .newsletter-container {
@@ -82,17 +81,26 @@ li a:hover:not(.active) {
     width: 20%;
 }
 
-@media (min-width: 900px) {
+@media (max-width:800px) {
     .container {
         display: grid;
-        grid-template-columns: 300px 200px 200px;
-        grid-template-rows: 100px 650px 50px;
+        grid-template-columns: auto ;
+        grid-template-rows: 100px 300px auto auto 10px;
         grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "sd sd main main main main main main"
-            "ft ft ft ft ft ft ft ft";
+            "hd "
+            "sd "
+            "main"
+            "ft";
         border: 2px solid red;
     }
+
+  .footer {
+     grid-area: ft;
+     height: 30px;
+     justify-self: flex-end;
+
+
+  }
 }
 
 .link-color {
@@ -105,7 +113,6 @@ li a:hover:not(.active) {
 .footer {
     grid-area: ft;
     color: #222;
-    position: fixed;
     height: 60px;
     bottom: 0;
     width: 100%;
@@ -118,9 +125,10 @@ li a:hover:not(.active) {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 40%;
+    width: 100%;
     border-radius: 2px;
     background-color: cornsilk;
+    
 }
 
 .card:hover {
@@ -128,5 +136,5 @@ li a:hover:not(.active) {
 }
 
 .container-card {
-    padding: 2px 10px;
+    padding: 40px 30px;
 }

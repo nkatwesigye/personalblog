@@ -1,10 +1,12 @@
+
 .highlight {
     background-color: #fff2ac;
     background-image: linear-gradient(to right, #ffe359 0%, white 100%);
 }
 
 .header_tile {
-        height: 100px;
+        grid-column: 1 / span 3;
+        height: auto;
     }
 
 .subscribe_post {
@@ -15,13 +17,17 @@
      vertical-align:middle;
 
     }
+.city-griditem1{
+    grid-area: sf;
+    grid-column: 1;
+
+}
 
 .city{
         background-image: url(../img/cityimage.jpg);
         align-items: center;
         color: red;
         vertical-align:middle;
-   
        }
  .post-info{
     color: white;
@@ -41,13 +47,7 @@
  color: orange;
  text-decoration: navy;
 }
-.maps{
-        background-image: url(../img/googlemaps.jpg);
-        align-items: center;
-        color: red;
-        vertical-align:middle;
-   
-       }
+
 
 .color-detail{
     color: white;
