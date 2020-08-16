@@ -1,3 +1,4 @@
+
 @import "style.css";
 @import "nav.css";
 @import "blogbase.css";
@@ -135,28 +136,50 @@ mark {
             "ft";
     }
 
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    
+
     .header_tile {
         grid-area: hd;
         grid-column: 1;
-        height: auto;
     }
 
     .test-div {
+        display: flex;
         grid-area: sd;
         grid-column: 1;
+        flex-direction: column;
+    }
+
+
+    .flex-ctn2 {
+        height: auto;
     }
 
     .flex-ctn {
         grid-area: sd1;
         display: flex;
-        flex-direction: row;
         grid-column: 1;
         color: black;
+       
     }
 
     .grid-item3 {
+        display: flex;
         grid-area: sd2;
-        grid-column: 1;
+        flex-direction: column;
+        text-align: left;
+        height: auto;
+    }
+
+    blockquote {
+
+   text-align: left;
+
     }
 
     .sub-flex {
@@ -175,186 +198,12 @@ mark {
     }
 
     .footer {
-        grid-area: ft;
-    }
-}
-@import "style.css";
-@import "nav.css";
-@import "blogbase.css";
-
-.blog_grid {
-    display: grid;
-    gap: 2px;
-    grid-template-rows: 115px auto auto 60px;
-    grid-template-areas:
-        "hd hd hd"
-        "sd sd sd"
-        "sf sf sf "
-        "ft ft ft";
-}
-
-.blog_container {
-    display: flex;
-    flex-direction: colomn;
-    justify-content: center;
-    border: 2px solid yellow;
-}
-
-.blog_container_row {
-    flex-direction: row;
-    justify-content: center;
-    border: 2px solid yellow;
-}
-
-img {
-    width: 100%;
-}
-
-.blog_box {
-    grid-area: hd;
-    width: 100%;
-    height: 500px;
-    border: 1px solid white;
-    align-items: center;
-    justify-content: center;
-    background-color: cornsilk;
-}
-
-.blog_box2 {
-    grid-area: sd;
-    align-items: center;
-}
-
-mark {
-    background-color: grey;
-    color: whitesmoke;
-}
-
-.blog_post1 {
-    grid-column: 1 / span 3;
-}
-
-.blog_post2 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../img/homestead.jpg");
-    color: black;
-    justify-content: right;
-    background-color: cornsilk;
-    margin-top: 1%;
-    align-items: center;
-    font-style: italic;
-    font-weight: lighter;
-}
-
-.test-div {
-    color: black;
-}
-.maps {
-    background-image: url(../img/googlemaps.jpg);
-    align-items: center;
-    color: red;
-    object-fit: cover;
-}
-
-.flex-ctn {
-    grid-area: sd;
-    display: flex;
-    flex-direction: row;
-    grid-column: 3;
-    color: black;
-}
-.flex-ctn2 {
-    grid-area: sd;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    height: 300px;
-    grid-column: 1;
-}
-
-.grid-item3 {
-    grid-area: sd;
-    grid-column: 2;
-}
-
-.grid-item4 {
-    grid-area: sf;
-    grid-column: 2;
-    justify-content: center;
-}
-
-.grid-item3sf {
-    grid-area: sf;
-    grid-column: 3;
-}
-
-.sub-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.post-card {
-    color: honeydew;
-    text-align: center;
-}
-
-@media (max-width: 800px) {
-    .blog_grid {
-        display: grid;
-        grid-template-rows: repeat(8, auto);
-        grid-template-areas:
-            "hd"
-            "sd"
-            "sd1"
-            "sd2"
-            "sf"
-            "sn"
-            "sn2"
-            "ft";
-    }
-
-    .header_tile {
-        grid-area: hd;
-        grid-column: 1;
-        height: auto;
-    }
-
-    .test-div {
-        grid-area: sd;
-        grid-column: 1;
-    }
-
-    .flex-ctn {
-        grid-area: sd1;
         display: flex;
-        flex-direction: row;
-        grid-column: 1;
-        color: black;
-    }
-
-    .grid-item3 {
-        grid-area: sd2;
-        grid-column: 1;
-    }
-
-    .sub-flex {
-        grid-area: sn;
-        grid-column: 1;
-    }
-
-    .grid-item3sf {
-        grid-area: sf;
-        grid-column: 1;
-    }
-
-    .city-griditem1 {
-        grid-area: sn2;
-        grid-column: 1;
-    }
-
-    .footer {
         grid-area: ft;
+       justify-content: left;
+    }
+
+    .float-side {
+        float: left;
     }
 }

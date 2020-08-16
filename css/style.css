@@ -80,25 +80,7 @@ li a:hover:not(.active) {
     width: 20%;
 }
 
-@media (max-width: 800px) {
-    .container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 100px 300px auto auto 10px;
-        grid-template-areas:
-            "hd "
-            "sd "
-            "main"
-            "ft";
-        border: 2px solid red;
-    }
 
-    .footer {
-        grid-area: ft;
-        height: 30px;
-        justify-self: flex-end;
-    }
-}
 
 .link-color {
     color: red;
@@ -133,4 +115,36 @@ li a:hover:not(.active) {
 
 .container-card {
     padding: 40px 30px;
+}
+
+@media (max-width: 800px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 300px auto auto 10px;
+        grid-template-areas:
+            "hd "
+            "sd "
+            "main"
+            "ft";
+        border: 2px solid red;
+    }
+
+    .footer {
+        display: flex;
+        grid-area: ft;
+        height: 30px;
+        justify-self: start;
+
+    }
+
+    .float-side {
+        float: left;
+    }
 }
