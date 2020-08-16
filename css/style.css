@@ -68,7 +68,6 @@ li a:hover:not(.active) {
     grid-area: main;
     background-color: cornsilk;
     align-content: space-between;
-    
 }
 
 .newsletter-container {
@@ -81,10 +80,10 @@ li a:hover:not(.active) {
     width: 20%;
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
     .container {
         display: grid;
-        grid-template-columns: auto ;
+        grid-template-columns: auto;
         grid-template-rows: 100px 300px auto auto 10px;
         grid-template-areas:
             "hd "
@@ -94,13 +93,11 @@ li a:hover:not(.active) {
         border: 2px solid red;
     }
 
-  .footer {
-     grid-area: ft;
-     height: 30px;
-     justify-self: flex-end;
-
-
-  }
+    .footer {
+        grid-area: ft;
+        height: 30px;
+        justify-self: flex-end;
+    }
 }
 
 .link-color {
@@ -128,7 +125,6 @@ li a:hover:not(.active) {
     width: 100%;
     border-radius: 2px;
     background-color: cornsilk;
-    
 }
 
 .card:hover {

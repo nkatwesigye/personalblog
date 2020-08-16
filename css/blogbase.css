@@ -1,54 +1,48 @@
-
 .highlight {
     background-color: #fff2ac;
     background-image: linear-gradient(to right, #ffe359 0%, white 100%);
 }
 
 .header_tile {
-        grid-column: 1 / span 3;
-        height: auto;
-    }
-
-.subscribe_post {
-     display: flex;
-    background-color:cornsilk;
-     align-items: center;
-     color: red;
-     vertical-align:middle;
-
-    }
-.city-griditem1{
-    grid-area: sf;
-    grid-column: 1;
-
+    grid-column: 1 / span 3;
+    height: auto;
 }
 
-.city{
-        background-image: url(../img/cityimage.jpg);
-        align-items: center;
-        color: red;
-        vertical-align:middle;
-       }
- .post-info{
+.subscribe_post {
+    display: flex;
+    background-color: cornsilk;
+    align-items: center;
+    color: red;
+    vertical-align: middle;
+}
+.city-griditem1 {
+    grid-area: sf;
+    grid-column: 1;
+}
+
+.city {
+    background-image: url(../img/cityimage.jpg);
+    align-items: center;
+    color: red;
+    vertical-align: middle;
+}
+.post-info {
     color: white;
     text-align: right;
+}
 
- }
-
- .post-info-clear{
-
+.post-info-clear {
     color: black;
     text-align: right;
     font-weight: bold;
- }
-
-.submit {
- background-color: red;
- color: orange;
- text-decoration: navy;
 }
 
+.submit {
+    background-color: red;
+    color: orange;
+    text-decoration: navy;
+}
 
-.color-detail{
+.color-detail {
     color: white;
 }
